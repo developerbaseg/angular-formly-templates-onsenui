@@ -1,0 +1,18 @@
+<ons-list-header ng-class="{'has-error': showError}"><span ng-show="options.templateOptions.required">*</span> {{options.templateOptions.label}}</ons-list-header>
+<ons-list-item>
+    <input
+        id="{{options.key}}"
+        name="{{options.key}}"
+        type="{{options.templateOptions.type}}"
+        maxlength="{{options.templateOptions.maxlength}}"
+        class="text-input text-input--transparent" 
+        style="width:100%; margin-top:4px;"
+        ng-pattern="options.templateOptions.pattern"        
+        ng-model="model[options.key]">
+        <span class="list-item-action" ng-show="options.templateOptions.type == 'date' || options.templateOptions.type == 'datetime-local'">
+            <ons-icon icon="fa-calendar" size="22px"></ons-icon>
+        </span>
+        <span class="list-item-action" ng-show="options.templateOptions.type == 'time'">
+            <ons-icon icon="fa-clock-o" size="22px"></ons-icon>
+        </span>
+</ons-list-item>
