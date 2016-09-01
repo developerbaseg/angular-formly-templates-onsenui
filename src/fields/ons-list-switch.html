@@ -1,0 +1,7 @@
+<ons-list-item>
+    <span ng-class="{'has-error': showError}"><span ng-show="options.templateOptions.required">*</span> {{options.templateOptions.label}}</span>
+    <label class="switch switch--list-item">
+        <input type="checkbox" class="switch__input" ng-model="model[options.key]">
+        <div class="switch__toggle"></div>
+    </label>
+</ons-list-item>
