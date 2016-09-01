@@ -1,0 +1,10 @@
+<ons-list-header style="background-color: #f9f9f9" ng-show="{{options.templateOptions.separators}}"></ons-list-header>
+<ons-list-item class="list__item ons-list-item-inner" modifier="tappable">
+    <label class="checkbox checkbox--noborder checkbox--list-item" ng-class="{'has-error': showError}">
+      <input type="checkbox" ng-model="model[options.key]" ng-required="{{options.templateOptions.required}}">
+      <div class="checkbox__checkmark checkbox--noborder checkbox--list-item__checkmark"></div>
+      <span ng-show="options.templateOptions.required">* </span>
+      {{options.templateOptions.label}}
+    </label>
+</ons-list-item>
+<ons-list-header style="background-color: #f9f9f9" ng-show="{{options.templateOptions.separators}}"></ons-list-header>
