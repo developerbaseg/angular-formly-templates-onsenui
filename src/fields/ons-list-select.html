@@ -1,0 +1,13 @@
+<ons-list-header ng-class="{'has-error': showError}"><span ng-show="options.templateOptions.required">*</span> {{options.templateOptions.label}}</ons-list-header>
+<ons-list-item>
+    <select 
+        style="width: 100%; margin-top: 4px; font-size: 16px; line-height: 1;" 
+        class="text-input text-input--transparent" 
+        ng-options="item as item.text for item in options.templateOptions.options track by item.value" 
+        ng-model="model[options.key]"
+        ng-required="{{options.templateOptions.required}}">
+    </select>
+    <span class="list-item-action">
+        <ons-icon icon="caret-down" size="22px"></ons-icon>
+    </span>
+</ons-list-item>
