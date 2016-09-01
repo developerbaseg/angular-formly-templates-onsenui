@@ -1,0 +1,8 @@
+<ons-list-header ng-class="{'has-error': showError}"><span ng-show="options.templateOptions.required">*</span> {{options.templateOptions.label}}</ons-list-header>
+<ons-list-item modifier="tappable" class="list__item ons-list-item-inner" ng-repeat="o in options.templateOptions.options">
+    <label class="radio-button radio-button--list-item">
+        <input type="radio" name="{{o.value}}" ng-model="model[options.key]" value="{{o.value}}" ng-required="{{options.templateOptions.required}}">
+        <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+        {{o.text}}
+    </label>
+</ons-list-item>
