@@ -3,7 +3,7 @@
     <select 
         style="width: 100%; margin-top: 4px; font-size: 16px; line-height: 1;" 
         class="text-input text-input--transparent" 
-        ng-options="item as item.text for item in options.templateOptions.options track by item.value" 
+        ng-options="item as item[to.labelProp || 'text'] group by item[to.groupProp || 'group'] for item in options.templateOptions.options track by item[to.valueProp || 'value']" 
         ng-model="model[options.key]"
         ng-required="{{options.templateOptions.required}}">
     </select>
