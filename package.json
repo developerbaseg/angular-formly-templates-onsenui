@@ -1,6 +1,10 @@
 {
   "name": "angular-formly-templates-onsenui",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/developerbaseg/angular-formly-templates-onsenui.git"
+  },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-angular-templates": "^1.1.0",
