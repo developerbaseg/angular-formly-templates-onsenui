@@ -3,12 +3,23 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    uglify: {
+    ngtemplates:  {
+		'formly.onsenui': {
+			src: 'src/fields/**.html',
+			dest: 'src/fields/<%= pkg.name %>.templates.js',
+			options:  {
+				url: function(url) { return url.replace('src/fields', 'onsenui/fields'); }
+			}
+		}
+	},
+	uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        banner: '(function () {',
+		separator: '})(); (function () {',
+        footer: '})();'
       },
       build: {
-        src: 'src/<%= pkg.name %>.js',
+        src: ['src/modules/<%= pkg.name %>.js','src/modules/<%= pkg.name %>.config.js','src/fields/<%= pkg.name %>.templates.js'],
         dest: 'build/<%= pkg.name %>.min.js'
       }
     }
@@ -17,7 +28,9 @@ module.exports = function(grunt) {
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
+  grunt.loadNpmTasks('grunt-angular-templates');
+  
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['uglify','ngtemplates']);
 
 };
