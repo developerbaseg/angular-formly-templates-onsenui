@@ -15,3 +15,8 @@ And your're ready!
 <h2>Documentation</h2>
 
 <p>See <a href="http://docs.angular-formly.com">angular-formly</a> for formly core documentation.</p>
+
+<h2>Try it now!</h2>
+
+<p data-height="265" data-theme-id="0" data-slug-hash="vXEZoW" data-default-tab="result" data-user="developerbaseg" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/developerbaseg/pen/vXEZoW/">vXEZoW</a> by BASE GLOBAL (<a href="http://codepen.io/developerbaseg">@developerbaseg</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
