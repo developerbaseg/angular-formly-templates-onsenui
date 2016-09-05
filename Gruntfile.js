@@ -14,7 +14,12 @@ module.exports = function(grunt) {
 	},
 	uglify: {
       options: {
-        banner: '(function () {',
+        banner: 
+			'/* <%= pkg.name %>' + 
+			' | (v<%= pkg.version %>)' +
+			' | builded on <%= grunt.template.today("dd-mm-yyyy") %>' +
+			' | GitHub: <%= pkg.repository.url %>' +
+			'*/\n(function () {',
 		separator: '})(); (function () {',
         footer: '})();'
       },
