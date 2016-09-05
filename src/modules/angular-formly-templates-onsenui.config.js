@@ -15,7 +15,7 @@
         });
         
         function getFieldTemplateUrl(name) {
-            return 's2/onsenui/fields/ons-' + name + '.html';
+            return 'onsenui/fields/ons-' + name + '.html';
         }
 
     }
