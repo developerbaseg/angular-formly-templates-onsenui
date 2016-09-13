@@ -20,3 +20,10 @@ And your're ready!
 
 <p data-height="265" data-theme-id="0" data-slug-hash="vXEZoW" data-default-tab="result" data-user="developerbaseg" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/developerbaseg/pen/vXEZoW/">vXEZoW</a> by BASE GLOBAL (<a href="http://codepen.io/developerbaseg">@developerbaseg</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<h2>Roadmap</h2>
+
+<ul>
+  <li>Inputs with inline labels (without ons-list)</li>
+  <li>New inputs: QR code reader/viewer, picture picker/viewer, Signature pad and more!</li>
+</ul>
