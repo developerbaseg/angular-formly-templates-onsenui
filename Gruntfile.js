@@ -27,15 +27,26 @@ module.exports = function(grunt) {
         src: ['src/modules/<%= pkg.name %>.js','src/modules/<%= pkg.name %>.config.js','src/fields/<%= pkg.name %>.templates.js'],
         dest: 'build/<%= pkg.name %>.min.js'
       }
-    }
+    },
+	cssmin: {
+		target: {
+			files: [{
+				expand: true,
+				cwd: 'src/css',
+				src: ['*.css'],
+				dest: 'build',
+				ext: '.min.css'
+			}]
+		}
+	}
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
-
   grunt.loadNpmTasks('grunt-angular-templates');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   
   // Default task(s).
-  grunt.registerTask('default', ['uglify','ngtemplates']);
+  grunt.registerTask('default', ['uglify','ngtemplates','cssmin']);
 
 };
