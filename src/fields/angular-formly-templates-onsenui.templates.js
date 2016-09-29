@@ -168,7 +168,13 @@ angular.module('formly.onsenui').run(['$templateCache', function($templateCache)
     "\n" +
     "        class=\"textarea textarea--transparent\" \r" +
     "\n" +
-    "        style=\"width:100%;margin-top:4px;\" rows=\"{{options.templateOptions.rows}}\" placeholder=\"{{options.templateOptions.placeholder}}\"></textarea>\r" +
+    "        style=\"width:100%;margin-top:4px;\" \r" +
+    "\n" +
+    "		rows=\"{{options.templateOptions.rows}}\" \r" +
+    "\n" +
+    "		placeholder=\"{{options.templateOptions.placeholder}}\"\r" +
+    "\n" +
+    "		ng-model=\"model[options.key]\"></textarea>\r" +
     "\n" +
     "</ons-list-item>\r" +
     "\n"
