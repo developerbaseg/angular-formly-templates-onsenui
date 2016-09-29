@@ -1,0 +1,12 @@
+{
+  "name": "angular-formly-templates-onsenui",
+  "version": "1.0.1",
+  "main": [
+    "build/angular-formly-templates-onsenui.min.css",
+	"build/angular-formly-templates-onsenui.min.js"
+    ],
+  "ignore": [
+    "src/"
+  ],
+  "keywords": ["angular", "formly", "template", "onsenui"]
+}
