@@ -8,5 +8,5 @@
   "ignore": [
     "src/"
   ],
-  "keywords": ["angular", "formly", "template", "onsenui"]
+  "keywords": ["angular", "formly", "template", "onsenui", "angular-formly"]
 }
