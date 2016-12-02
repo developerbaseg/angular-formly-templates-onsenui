@@ -141,6 +141,18 @@ angular.module('formly.onsenui').run(['$templateCache', function($templateCache)
   );
 
 
+  $templateCache.put('onsenui/fields/ons-list-static.html',
+    "<ons-list-header>{{options.templateOptions.label}}</ons-list-header>\r" +
+    "\n" +
+    "<ons-list-item>\r" +
+    "\n" +
+    "    {{model[options.key]}}\r" +
+    "\n" +
+    "</ons-list-item>\r" +
+    "\n"
+  );
+
+
   $templateCache.put('onsenui/fields/ons-list-switch.html',
     "<ons-list-item>\r" +
     "\n" +
