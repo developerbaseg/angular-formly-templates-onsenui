@@ -28,5 +28,5 @@ And your're ready!
   <li>New inputs: QR code reader/viewer, picture picker/viewer, Signature pad and more!</li>
   <li>Clear button for inputs</li>
   <li>More styling options</li>
-  <li>Slider</li>
+  <li>More Formy options on template</li>
 </ul>
