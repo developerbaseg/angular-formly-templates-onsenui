@@ -27,6 +27,6 @@ And your're ready!
   <li>Inputs with inline labels (without ons-list)</li>
   <li>New inputs: QR code reader/viewer, picture picker/viewer, Signature pad and more!</li>
   <li>Clear button for inputs</li>
-  <li>More styling options</li>
+  <li>More styling options</li>
   <li>Slider</li>
 </ul>
