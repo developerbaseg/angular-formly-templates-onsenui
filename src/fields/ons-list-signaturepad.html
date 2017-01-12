@@ -1,0 +1,7 @@
+<ons-list-header ng-class="{'has-error': showError}"><span ng-show="options.templateOptions.required">*</span> {{options.templateOptions.label}}</ons-list-header>
+<ons-list-item>
+    <signature-pad 
+        id="{{options.key}}"
+        name="{{options.key}}"
+        ng-model="model[options.key]"></signature-pad>
+</ons-list-item>

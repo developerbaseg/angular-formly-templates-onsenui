@@ -36,3 +36,15 @@ ons-list-item > ons-icon {
 .list-item-action > ons-icon {
  margin-top: 10px;
 }
+
+/*LAP: for clear-button directive*/
+.searchclear {
+    color: #ccc;
+    cursor: pointer;
+    font-size: 18px;
+    height: 18px;
+    margin: auto;
+    position: absolute!important;
+    right: -2px;
+    z-index: 99999999;
+}

@@ -25,8 +25,11 @@ And your're ready!
 
 <ul>
   <li>Inputs with inline labels (without ons-list)</li>
-  <li>New inputs: QR code reader/viewer, picture picker/viewer, Signature pad and more!</li>
-  <li>Clear button for inputs</li>
-  <li>More styling options</li>
-  <li>More Formy options on template</li>
+  <li>New inputs:
+    <ul>
+      <li>QR code reader/viewer</li>
+      <li>Picture picker/viewer</li>
+      <li>Signature pad (added in v1.2)</li>
+    </ul>
+  </li>
 </ul>

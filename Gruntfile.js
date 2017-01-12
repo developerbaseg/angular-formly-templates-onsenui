@@ -24,7 +24,12 @@ module.exports = function(grunt) {
         footer: '})();'
       },
       build: {
-        src: ['src/modules/<%= pkg.name %>.js','src/modules/<%= pkg.name %>.config.js','src/fields/<%= pkg.name %>.templates.js'],
+        src: [
+					'src/modules/<%= pkg.name %>.js',
+					'src/modules/<%= pkg.name %>.config.js',
+					'src/directives/*.directive.js',
+					'src/fields/<%= pkg.name %>.templates.js'
+				],
         dest: 'build/<%= pkg.name %>.min.js'
       }
     },
@@ -47,6 +52,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   
   // Default task(s).
-  grunt.registerTask('default', ['uglify','ngtemplates','cssmin']);
+  //grunt.registerTask('default', ['uglify','ngtemplates','cssmin']);
+	grunt.registerTask('default', ['ngtemplates','cssmin','uglify']);
 
 };
