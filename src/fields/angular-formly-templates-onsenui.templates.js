@@ -40,13 +40,15 @@ angular.module('formly.onsenui').run(['$templateCache', function($templateCache)
     "\n" +
     "        maxlength=\"{{options.templateOptions.maxlength}}\"\r" +
     "\n" +
-    "        class=\"text-input text-input--transparent\" \r" +
+    "        class=\"text-input text-input--transparent {{options.templateOptions.class}}\" \r" +
     "\n" +
     "        style=\"width:100%; margin-top:4px;\"\r" +
     "\n" +
-    "        ng-pattern=\"options.templateOptions.pattern\"        \r" +
+    "        ng-pattern=\"options.templateOptions.pattern\"\r" +
     "\n" +
-    "        ng-model=\"model[options.key]\">\r" +
+    "        ng-readonly=\"options.templateOptions.readonly\"\r" +
+    "\n" +
+    "        ng-model=\"model[options.key]\" clear-button>\r" +
     "\n" +
     "        <span class=\"list-item-action\" ng-show=\"options.templateOptions.type == 'date' || options.templateOptions.type == 'datetime-local'\">\r" +
     "\n" +
@@ -141,6 +143,23 @@ angular.module('formly.onsenui').run(['$templateCache', function($templateCache)
   );
 
 
+  $templateCache.put('onsenui/fields/ons-list-signaturepad.html',
+    "<ons-list-header ng-class=\"{'has-error': showError}\"><span ng-show=\"options.templateOptions.required\">*</span> {{options.templateOptions.label}}</ons-list-header>\r" +
+    "\n" +
+    "<ons-list-item>\r" +
+    "\n" +
+    "    <signature-pad \r" +
+    "\n" +
+    "        id=\"{{options.key}}\"\r" +
+    "\n" +
+    "        name=\"{{options.key}}\"\r" +
+    "\n" +
+    "        ng-model=\"model[options.key]\"></signature-pad>\r" +
+    "\n" +
+    "</ons-list-item>"
+  );
+
+
   $templateCache.put('onsenui/fields/ons-list-static.html',
     "<ons-list-header>{{options.templateOptions.label}}</ons-list-header>\r" +
     "\n" +
@@ -178,15 +197,17 @@ angular.module('formly.onsenui').run(['$templateCache', function($templateCache)
     "\n" +
     "    <textarea \r" +
     "\n" +
-    "        class=\"textarea textarea--transparent\" \r" +
+    "        class=\"textarea textarea--transparent {{options.templateOptions.style}}\" \r" +
     "\n" +
     "        style=\"width:100%;margin-top:4px;\" \r" +
     "\n" +
-    "		rows=\"{{options.templateOptions.rows}}\" \r" +
+    "		rows=\"{{options.templateOptions.rows}}\"\r" +
     "\n" +
     "		placeholder=\"{{options.templateOptions.placeholder}}\"\r" +
     "\n" +
-    "		ng-model=\"model[options.key]\"></textarea>\r" +
+    "		ng-model=\"model[options.key]\"\r" +
+    "\n" +
+    "        ng-readonly=\"options.templateOptions.readonly\"></textarea>\r" +
     "\n" +
     "</ons-list-item>\r" +
     "\n"

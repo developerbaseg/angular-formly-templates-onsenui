@@ -5,10 +5,11 @@
         name="{{options.key}}"
         type="{{options.templateOptions.type}}"
         maxlength="{{options.templateOptions.maxlength}}"
-        class="text-input text-input--transparent" 
+        class="text-input text-input--transparent {{options.templateOptions.class}}" 
         style="width:100%; margin-top:4px;"
-        ng-pattern="options.templateOptions.pattern"        
-        ng-model="model[options.key]">
+        ng-pattern="options.templateOptions.pattern"
+        ng-readonly="options.templateOptions.readonly"
+        ng-model="model[options.key]" clear-button>
         <span class="list-item-action" ng-show="options.templateOptions.type == 'date' || options.templateOptions.type == 'datetime-local'">
             <ons-icon icon="fa-calendar" size="22px"></ons-icon>
         </span>
