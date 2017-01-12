@@ -25,5 +25,12 @@ And your're ready!
 
 <ul>
   <li>Inputs with inline labels (without ons-list)</li>
-  <li>New inputs: QR code reader/viewer, picture picker/viewer, <span style="text-decoration:line-through;">Signature pad</span> and more!</li>
+  <li>New inputs:
+    <ul>
+      <li>QR code reader/viewer</li>
+      <li>Picture picker/viewer</li>
+      <li>Signature pad (added in v1.2)</li>
+      <li>Inline input style</li>
+    </ul>
+  </li>
 </ul>
