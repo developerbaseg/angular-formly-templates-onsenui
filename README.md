@@ -30,7 +30,6 @@ And your're ready!
       <li>QR code reader/viewer</li>
       <li>Picture picker/viewer</li>
       <li>Signature pad (added in v1.2)</li>
-      <li>Inline input style</li>
     </ul>
   </li>
 </ul>
