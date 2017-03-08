@@ -20,6 +20,8 @@
         return directive;
 
         function link(scope, elm, attr, ngModelCtrl) {
+            if (attr.clearButton == 'true') return;
+
             elm = $(elm);
             var top = elm.height() / 2;
             elm.wrap("<div style='position: relative;'></div>");    

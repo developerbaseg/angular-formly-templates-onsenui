@@ -48,7 +48,7 @@ angular.module('formly.onsenui').run(['$templateCache', function($templateCache)
     "\n" +
     "        ng-readonly=\"options.templateOptions.readonly\"\r" +
     "\n" +
-    "        ng-model=\"model[options.key]\" clear-button>\r" +
+    "        ng-model=\"model[options.key]\" clear-button=\"{{options.templateOptions.readonly}}\">\r" +
     "\n" +
     "        <span class=\"list-item-action\" ng-show=\"options.templateOptions.type == 'date' || options.templateOptions.type == 'datetime-local'\">\r" +
     "\n" +

@@ -9,7 +9,7 @@
         style="width:100%; margin-top:4px;"
         ng-pattern="options.templateOptions.pattern"
         ng-readonly="options.templateOptions.readonly"
-        ng-model="model[options.key]" clear-button>
+        ng-model="model[options.key]" clear-button="{{options.templateOptions.readonly}}">
         <span class="list-item-action" ng-show="options.templateOptions.type == 'date' || options.templateOptions.type == 'datetime-local'">
             <ons-icon icon="fa-calendar" size="22px"></ons-icon>
         </span>
